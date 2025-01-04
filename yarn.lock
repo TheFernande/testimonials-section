@@ -2531,12 +2531,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.464.0":
-  version: 0.464.0
-  resolution: "lucide-react@npm:0.464.0"
+"lucide-react@npm:^0.469.0":
+  version: 0.469.0
+  resolution: "lucide-react@npm:0.469.0"
   peerDependencies:
-    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
-  checksum: 6b5f79a2a19a07c3f1c4d995b76ab9df0afd6288491a194f0f4c3bbfbafc7a0d1081ff0ae9a5cb0d6fcad2d7fe97ba285704b2e3f686c454a225f6dc4200480a
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 0ee78d110550579b848a01446a440f733fd17e1bf1850aa01551b61f415e03e5f5ab7f26b56f1c648edc93856177f5476ff9f8f6f5d80e8fe45913d208f49961
   languageName: node
   linkType: hard
 
@@ -3629,29 +3629,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"starter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "starter@workspace:."
-  dependencies:
-    "@formkit/auto-animate": "npm:^0.8.2"
-    "@types/node": "npm:^20.17.9"
-    "@types/react": "npm:^18.3.12"
-    "@types/react-dom": "npm:^18.3.1"
-    autoprefixer: "npm:^10.4.16"
-    eslint: "npm:^8.57.1"
-    eslint-config-next: "npm:^15.0.3"
-    lucide-react: "npm:^0.464.0"
-    next: "npm:14.2.20"
-    postcss: "npm:^8.4.49"
-    prettier: "npm:^3.4.2"
-    prettier-plugin-tailwindcss: "npm:^0.6.9"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    tailwindcss: "npm:^3.4.1"
-    typescript: "npm:^5.7.2"
-  languageName: unknown
-  linkType: soft
-
 "streamsearch@npm:^1.1.0":
   version: 1.1.0
   resolution: "streamsearch@npm:1.1.0"
@@ -3891,6 +3868,29 @@ __metadata:
   checksum: d4679609bb2a9b48eeaf84632b6d844128d2412b95b6de07d53d8ee8baf4ca0857c9331dfa510390a0727b550fd543d4d1a10995ad86cdf078423fbb8d99831d
   languageName: node
   linkType: hard
+
+"testimonials-section@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "testimonials-section@workspace:."
+  dependencies:
+    "@formkit/auto-animate": "npm:^0.8.2"
+    "@types/node": "npm:^20.17.9"
+    "@types/react": "npm:^18.3.12"
+    "@types/react-dom": "npm:^18.3.1"
+    autoprefixer: "npm:^10.4.16"
+    eslint: "npm:^8.57.1"
+    eslint-config-next: "npm:^15.0.3"
+    lucide-react: "npm:^0.469.0"
+    next: "npm:14.2.20"
+    postcss: "npm:^8.4.49"
+    prettier: "npm:^3.4.2"
+    prettier-plugin-tailwindcss: "npm:^0.6.9"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    tailwindcss: "npm:^3.4.1"
+    typescript: "npm:^5.7.2"
+  languageName: unknown
+  linkType: soft
 
 "text-table@npm:^0.2.0":
   version: 0.2.0

@@ -71,9 +71,7 @@ export default function Home() {
   return (
     // `<main>` -> this is the "Page body" element in the Figma design
     <main className='gfe-main'>
-      <div className='relative'>
-        <TestimonialSection data={testimonialData} />
-      </div>
+      <TestimonialSection data={testimonialData} />
     </main>
   );
 }

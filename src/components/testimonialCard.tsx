@@ -4,6 +4,7 @@ import Image from "next/image";
 import autoAnimate from "@formkit/auto-animate";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export interface TestimonialCardProps {
   name: string;
@@ -11,6 +12,7 @@ export interface TestimonialCardProps {
   testimonial: string;
   imageUrl: string;
   maxTestimonialLength?: number;
+  gridOrder?: number;
 }
 
 const MAX_TESTIMONIAL_LENGTH = 180;
@@ -21,7 +23,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = props => {
     username,
     testimonial,
     imageUrl,
-    maxTestimonialLength = MAX_TESTIMONIAL_LENGTH
+    maxTestimonialLength = MAX_TESTIMONIAL_LENGTH,
+    gridOrder
   } = props;
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -39,7 +42,22 @@ const TestimonialCard: React.FC<TestimonialCardProps> = props => {
   }, []);
 
   return (
-    <div className='w-full max-w-[340px] rounded-lg bg-white p-6 leading-6 shadow-[0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_rgba(0,0,0,0.06)]'>
+    <div
+      // className={
+      //   (gridOrder === 1 && "order-1") +
+      //   " " +
+      //   (gridOrder === 2 && "order-2") +
+      //   " " +
+      //   (gridOrder === 3 && "order-3") +
+      //   " h-fit w-full max-w-[384px] rounded-lg bg-white p-6 leading-6 shadow-[0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_rgba(0,0,0,0.06)]"
+      // }
+      className={cn(
+        gridOrder === 1 && "lg:order-1",
+        gridOrder === 2 && "lg:order-2",
+        gridOrder === 3 && "lg:order-3",
+        "h-fit w-full max-w-[384px] rounded-lg bg-white p-6 leading-6 shadow-[0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_rgba(0,0,0,0.06)]"
+      )}
+    >
       <div className='flex flex-col gap-4'>
         <div className='flex items-center gap-4'>
           <div className='relative aspect-square w-[48px] flex-shrink-0'>

@@ -18,7 +18,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = props => {
             Countless users, countless smiles
           </p>
         </div>
-        <p className='pb-12 text-lg font-normal text-neutral-600 md:text-xl'>
+        <p className='text-lg font-normal text-neutral-600 md:text-xl'>
           Explore our community&#39;s journey and discover why satisfaction defines us.
         </p>
       </header>

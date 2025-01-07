@@ -55,7 +55,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = props => {
         gridOrder === 1 && "lg:order-1",
         gridOrder === 2 && "lg:order-2",
         gridOrder === 3 && "lg:order-3",
-        "h-fit w-full max-w-[384px] rounded-lg bg-white px-4 py-6 leading-6 shadow-[0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_rgba(0,0,0,0.06)]"
+        "h-fit w-full max-w-[384px] rounded-lg border border-neutral-200 bg-white px-4 py-6 leading-6 shadow-[0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_rgba(0,0,0,0.06)]"
       )}
     >
       <div className='flex flex-col gap-4'>

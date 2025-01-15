@@ -1,4 +1,8 @@
-# Starter project
+# Live site URL
+
+[https://testimonials-section-smoky.vercel.app/]
+
+## Starter project
 
 ## Step by step guide for creating a new project based on this one
 
